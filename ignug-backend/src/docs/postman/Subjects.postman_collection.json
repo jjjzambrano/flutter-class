@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "1a197c86-52b0-4c00-9f1d-abbd31b2fb52",
+		"name": "Subjects",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18792146"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/subjects?autonomous_hour=&code\n=&credit=&name=&practical_hour=&scale=&teacher_hour=",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"subjects"
+					],
+					"query": [
+						{
+							"key": "academic_period",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "curriculum",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "type",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "autonomous_hour",
+							"value": ""
+						},
+						{
+							"key": "code\n",
+							"value": ""
+						},
+						{
+							"key": "credit",
+							"value": ""
+						},
+						{
+							"key": "name",
+							"value": ""
+						},
+						{
+							"key": "practical_hour",
+							"value": ""
+						},
+						{
+							"key": "scale",
+							"value": ""
+						},
+						{
+							"key": "teacher_hour",
+							"value": ""
+						},
+						{
+							"key": "state",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/subjects/2",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"subjects",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"autonomousHour\": 3,\r\n\"credit\": 1,\r\n\"name\": \"Fundamentos de Programacion\",\r\n\"practicalHour\": 2,\r\n\"scale\": 1,\r\n\"teacherHour\": 8,\r\n\"academicPeriodId\": 4,\r\n\"curriculumId\": 1,\r\n\"stateId\": 2,\r\n\"typeId\": 3,\r\n\"code\": \"12345\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/subjects",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"autonomousHour\": 3,\r\n\"credit\": 1,\r\n\"name\": \"Fundamentos de Programacion\",\r\n\"practicalHour\": 2,\r\n\"scale\": 1,\r\n\"teacherHour\": 8,\r\n\"academicPeriodId\": 4,\r\n\"curriculumId\": 1,\r\n\"stateId\": 2,\r\n\"typeId\": 3,\r\n\"code\": \"12345\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/subjects/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"subjects",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juan\",\r\n    \"lastname\": \"Perez\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/subjects/2",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"subjects",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

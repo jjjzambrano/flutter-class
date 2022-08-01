@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "02238c91-ad5b-4acf-915f-e1c0d1cb8079",
+		"name": "Information-teachers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12492400"
+	},
+	"item": [
+		{
+			"name": "findOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/information-teachers/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"information-teachers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/information-teachers/?academicUnit=lare&administrativeHours=2",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"information-teachers",
+						""
+					],
+					"query": [
+						{
+							"key": "academicUnit",
+							"value": "lare"
+						},
+						{
+							"key": "administrativeHours",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryHigherEducationId\":1,\r\n    \"dedicationTimeId\":1,\r\n    \"financingTypeId\":1,\r\n    \"higherEducationId\":1,\r\n    \"scholarshipId\":1,\r\n    \"scholarshipTypeId\":1,\r\n    \"teachingLadderId\":1,\r\n    \"usernameId\":1,\r\n    \"academicUnit\": \"Nanu\",\r\n    \"administrativeHours\": 12,\r\n    \"classHours\": 10,\r\n    \"communityHours\": 8,\r\n    \"degreeHigherEducation\": \"Sinterlan\",\r\n    \"hoursWorked\": 8,\r\n    \"investigationHours\": 12,\r\n    \"institutionHigherEducation\": \"eliop\",\r\n    \"otherHours\": \"investigaciones\",\r\n    \"publications\": 8,\r\n    \"scholarshipAmount\": 300,\r\n    \"totalSubjects\": 2,\r\n    \"technical\": \"varias\",\r\n    \"technology\": \"laboratio\",\r\n    \"totalPublications\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/information-teachers",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"information-teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"countryHigherEducationId\":1,\r\n    \"dedicationTimeId\":1,\r\n    \"financingTypeId\":1,\r\n    \"higherEducationId\":1,\r\n    \"scholarshipId\":1,\r\n    \"scholarshipTypeId\":1,\r\n    \"teachingLadderId\":1,\r\n    \"usernameId\":1,\r\n    \"academicUnit\": \"VAS\",\r\n    \"administrativeHours\": 12,\r\n    \"classHours\": 10,\r\n    \"communityHours\": 8,\r\n    \"degreeHigherEducation\": \"Sinterlan\",\r\n    \"hoursWorked\": 8,\r\n    \"investigationHours\": 12,\r\n    \"institutionHigherEducation\": \"eliop\",\r\n    \"otherHours\": \"investigaciones\",\r\n    \"publications\": 8,\r\n    \"scholarshipAmount\": 300,\r\n    \"totalSubjects\": 2,\r\n    \"technical\": \"varias\",\r\n    \"technology\": \"laboratio\",\r\n    \"totalPublications\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/information-teachers/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"information-teachers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juan\",\r\n    \"lastname\": \"Perez\",\r\n    \"birthdate\": \"1990-12-04\",\r\n    \"married\": false,\r\n    \"age\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/information-teachers/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"information-teachers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

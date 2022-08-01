@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "500395b3-2d79-44d3-9cff-70014a5b624c",
+		"name": "curriculum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16823902"
+	},
+	"item": [
+		{
+			"name": "findOne",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"pepito \",\r\n    \"code\":\"magdalena\",\r\n    \"description\":\"cambio de horario \",\r\n    \"resolutionNumber\":\"horario\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/curricula",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"curricula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/curricula/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"curricula",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"juan  \",\r\n    \"code\":\"55555\",\r\n    \"careerId\":3,\r\n    \"startedAt\":2,\r\n    \"description\":\"gggg\",\r\n    \"resolutionNumber\":\"cambio de hora\",\r\n    \"weeksNumber\":3,\r\n    \"periodicAcademicNumber\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/curricula/2",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"curricula",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/curricula/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"curricula",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"andres\",\r\n    \"code\":\"66666\",\r\n    \"careerId\":3,\r\n    \"startedAt\":2,\r\n    \"stateId\":2,\r\n    \"description\":\"holadd\",\r\n    \"resolutionNumber\":\"cambio de hora\",\r\n    \"weeksNumber\":3,\r\n    \"periodicAcademicNumber\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/curricula",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"curricula"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

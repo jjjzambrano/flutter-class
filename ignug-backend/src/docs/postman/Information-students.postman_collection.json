@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "bbbc8452-3b8d-4409-a234-0a48d48c3325",
+		"name": "Information-students",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18791565"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"isAncestralLanguageId\": 1,\r\n \"isBonusDevelopmentReceiveId\":1,\r\n \"isDisabilityId\":1,\r\n \"isDegreeSuperiorId\":1,\r\n \"isSubjectRepeatId\":1,\r\n \"address\": \"hola\",\r\n \"ancestralLanguage\" :\"No\",\r\n \"cellPhone\": \"string\",\r\n \"codanisNumber\":\"2504\",\r\n \"community\": 1,\r\n \"companyName\": \"Abarotes\",\r\n \"contactEmergencyName\": \"Abuelo\",\r\n \"contactEmergencyKinship\": \"Abuela\",\r\n \"contactEmergencyPhone\": \"0988372390\",\r\n \"degreeObtainedSuperior\": \"No\",\r\n \"differentiatedPension\": \"No\",\r\n \"disabilityPercentage\": 50,\r\n \"disabilityType\": \"NINGUNA\",\r\n \"educationalAmount\": 20,\r\n \"educationLevelMother\": \"2\",\r\n \"educationLevelFather\": \"2\",\r\n \"economicAmount\": 2,\r\n \"economicPracticeSector\": \"Si\",\r\n \"familyIncome\": 12, \r\n \"financingScholarshipType\": \"No\",\r\n \"isExecutedPractice\": \"1\",\r\n \"isExecutedCommunity\": \"1\",\r\n \"isLostGratuity\":\"1\",\r\n \"institutionPracticeType\": \"1\",\r\n \"membersHouseNumber\": 2,\r\n \"ocupation\": \"conserje\",\r\n \"phone\": \"0988372390\",\r\n \"postalCode\": \"108256\",\r\n \"practiceHours\":180,\r\n \"scholarshipAmount\":2,\r\n \"scholarshipReason1\": \"N/A\",\r\n \"scholarshipReason2\": \"N/A\",\r\n \"scholarshipReason3\": \"N/A\",\r\n \"scholarshipReason4\": \"N/A\",\r\n \"scholarshipReason5\": \"N/A\",\r\n \"scholarshipReason6\": \"N/A\",\r\n \"scholarshipType\": \"NA\",\r\n \"tariffScholarshipPercentage\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{HOST}}/information-students"
+			},
+			"response": []
+		},
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{HOST}}/information-students"
+			},
+			"response": []
+		},
+		{
+			"name": "findOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{HOST}}/information-students/3"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"isAncestralLanguageId\": 1,\r\n \"isBonusDevelopmentReceiveId\":1,\r\n \"isDisabilityId\":1,\r\n \"isDegreeSuperiorId\":1,\r\n \"isSubjectRepeatId\":1,\r\n \"address\": \"hola\",\r\n \"ancestralLanguage\" :\"No\",\r\n \"cellPhone\": \"string\",\r\n \"codanisNumber\":\"2504\",\r\n \"community\": 1,\r\n \"companyName\": \"Abarotes\",\r\n \"contactEmergencyName\": \"Abuelo\",\r\n \"contactEmergencyKinship\": \"Abuela\",\r\n \"contactEmergencyPhone\": \"0988372390\",\r\n \"degreeObtainedSuperior\": \"No\",\r\n \"differentiatedPension\": \"No\",\r\n \"disabilityPercentage\": 50,\r\n \"disabilityType\": \"NINGUNA\",\r\n \"educationalAmount\": 20,\r\n \"educationLevelMother\": \"2\",\r\n \"educationLevelFather\": \"2\",\r\n \"economicAmount\": 2,\r\n \"economicPracticeSector\": \"Si\",\r\n \"familyIncome\": 12, \r\n \"financingScholarshipType\": \"No\",\r\n \"isExecutedPractice\": \"1\",\r\n \"isExecutedCommunity\": \"1\",\r\n \"isLostGratuity\":\"1\",\r\n \"institutionPracticeType\": \"1\",\r\n \"membersHouseNumber\": 2,\r\n \"ocupation\": \"conserje\",\r\n \"phone\": \"0988372390\",\r\n \"postalCode\": \"108256\",\r\n \"practiceHours\":180,\r\n \"scholarshipAmount\":2,\r\n \"scholarshipReason1\": \"N/A\",\r\n \"scholarshipReason2\": \"N/A\",\r\n \"scholarshipReason3\": \"N/A\",\r\n \"scholarshipReason4\": \"N/A\",\r\n \"scholarshipReason5\": \"N/A\",\r\n \"scholarshipReason6\": \"N/A\",\r\n \"scholarshipType\": \"NA\",\r\n \"tariffScholarshipPercentage\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{HOST}}/information-students/3"
+			},
+			"response": []
+		},
+		{
+			"name": "remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{HOST}}/information-students/4"
+			},
+			"response": []
+		}
+	]
+}

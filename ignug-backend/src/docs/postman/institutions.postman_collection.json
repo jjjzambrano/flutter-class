@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "890c722f-68d6-4399-b227-d31c290645e0",
+		"name": "ignug - institutions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15364605"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/institutions",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"institutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findOne",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/institutions/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"institutions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"addressId\": 5,\r\n    \"stateId\": 1,\r\n    \"acronym\": \"tes\",\r\n    \"cellphone\": \"tes123\",\r\n    \"code\": \"tes\",\r\n    \"codeSniese\": \"tes\",\r\n    \"denomination\": \"tes\",\r\n    \"email\": \"tes@test.com\",\r\n    \"logo\": \"tes\",\r\n    \"name\": \"tes\",\r\n    \"phone\": \"tes123\",\r\n    \"shortName\": \"tes\",\r\n    \"slogan\": \"tes\",\r\n    \"web\": \"http://test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/institutions",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"institutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"addressId\": 1,\r\n    \"stateId\": 1,\r\n    \"acronym\": \"tes\",\r\n    \"cellphone\": \"tes123\",\r\n    \"code\": \"tes\",\r\n    \"codeSniese\": \"tes\",\r\n    \"denomination\": \"tes\",\r\n    \"email\": \"tes@test.com\",\r\n    \"logo\": \"tes\",\r\n    \"name\": \"tes\",\r\n    \"phone\": \"tes123\",\r\n    \"shortName\": \"tes\",\r\n    \"slogan\": \"tes\",\r\n    \"web\": \"http://test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/institutions/1",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"institutions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/institutions/12",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"institutions",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
